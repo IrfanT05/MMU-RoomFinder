@@ -1,0 +1,163 @@
+html, body { /* Removes default settings */
+    margin: 0;
+    padding: 0;
+}  
+
+#gridContainer{ 
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 20vh 80vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+#leftColumn{
+    grid-column: 1/1;
+    background-color: #00c1d4;
+    border-right: 2px solid black;
+    padding-left: 2%;
+    position: relative;
+}
+
+#LogoDiv{
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: #00c1d4;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 2%;
+    padding-left: 2%;
+    /* padding based on REM perhaps for scaling reasons. Look into. Same with the border PX when zooming */
+}
+
+#favouritesButton{
+    display: inline;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    left: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#accesibilityButton{
+    display: inline;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    left: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#mapIndexButton{
+    display: inline;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    left: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#favouritesText{
+    display: none;
+}
+
+#accesibilityText{
+    display: none;
+}
+
+#mapIndexText{
+    display: none;
+}
+
+#MMULogo{ /* ensures that the logo contains the entire grid box*/
+    object-fit: contain;
+    width: 100%;
+    height: 50%;
+}
+
+#rightColumn{
+    /* padding-left: 1%; */
+    grid-column: 2/2;
+    grid-row: 1/ span 2;
+}
+
+#mapImage{
+    position: absolute; 
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    /* margin-left: -10%; */
+    background-color: #bfbfbf;
+    z-index: -1;
+}
+
+#image{ 
+    position: absolute;
+    border: 2px solid black; 
+    right: 2%;
+    bottom: 5%;
+    width: 15%;
+    height: 25%;
+}
+
+#fullscreenButton{
+    position: absolute;
+    right: 4%;
+    bottom: 7%;
+    color: white;
+}
+
+.inputbox input{
+    width: 90%;
+    height:5%;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 240, 0); 
+    border-radius: 40px;
+}
+
+.inputbox{
+    padding-bottom: 20%;
+    position: absolute;
+}
+
+#fullscreenButton{
+    display: inline;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+}
+
+#fullscreenExit{
+    display: inline;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    right: 4%;
+    bottom: 7%;
+    display: none;
+
+}
+
+/* Something is causing horizontal scroll, maybe g42 width. need to position image in left corner and only take up certains space. */
+/* Might need to set g42 into its own div inside a div with image.png. Pos relative image.pngs div and then absolute g42. */
