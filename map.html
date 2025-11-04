@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- <base href="https://team-project-25b23.firebaseapp.com/"> -->
+    <title>UniMap</title>
+</head>
+<body>
+    <div id="gridContainer">
+        <div id="LogoDiv">
+            <img src="logo.svg" alt="MMU Logo" id="MMULogo">
+        </div>
+        <div id="leftColumn">
+                <div>
+                    <h3>Favourites<button id="favouritesButton"><span class="material-symbols-outlined" id="favouritesExpand">expand_more</span></button></h3>
+                    <p id="favouritesText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum laboriosam quaerat cum nesciunt cupiditate voluptas ullam dignissimos. Aliquid ipsum asperiores, provident dolorem error ratione exercitationem earum eveniet alias architecto!</p>
+                </div>
+                <div>
+                    <h3>Accesibility<button id="accesibilityButton" onclick="toggleText()"><span class="material-symbols-outlined" id="accesibilityExpand">expand_more</span></button></h3>
+                </div>
+
+                <input class="figure-caption-test" id="dark" style="display: none;" type="radio" name="option" value="Dark"/>
+                <figcaption class="figure-caption-test" id="reveal-text" style="display: none;">
+                    Dark mode
+                </figcaption>
+                <input class="figure-caption-test" id="light" style="display: none;" type="radio" name="option" value="Light"/>
+                <figcaption class="figure-caption-test" id="reveal-text" style="display: none;">
+                    Light mode
+                </figcaption>
+                <input class="figure-caption-test" id="colourblind" style="display: none;" type="radio" name="option" value="Colourblind"/>
+                <figcaption class="figure-caption-test" id="reveal-text" style="display: none;">
+                    Colourblind mode
+                </figcaption>
+
+
+                <div>
+                    <h3>Map Index<button id="mapIndexButton"><span class="material-symbols-outlined" id="mapIndexExpand">expand_more</span></button></h3>
+                    <p class="mapIndexText"><span class="material-symbols-outlined">stairs</span>Staircase</p>
+                    <p class="mapIndexText"><span class="material-symbols-outlined">man</span>Male Toilet</p>
+                    <p class="mapIndexText"><span class="material-symbols-outlined">woman</span>Female Toilet</p>
+                    <p class="mapIndexText"><span class="material-symbols-outlined">accessible</span>Disabled Toilet</p>
+                    <p class="mapIndexText"><span class="material-symbols-outlined">elevator</span>Elevator</p>
+                    <p class="mapIndexText"><span class="material-symbols-outlined">door_front</span>Entrance</p>
+                </div>
+                    
+        </div>
+        <div id="rightColumn">
+            <div class="inputbox">
+                <input id="userinput" placeholder="Please enter room number:">
+                <button id = "mySubmit">Submit</button>
+            </div>
+            <div id="mapDiv">
+                <img src="GroundFloorMap.jpeg" alt="Map Image" id="mapImage">
+                <img src="G.42LectureTheatre.jpg" alt="Room Image" id="image">
+                <span class="material-symbols-outlined" id="fullscreenButton">fullscreen</span>
+                <span class="material-symbols-outlined" id="fullscreenExit">fullscreen_exit</span>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="myjs.js"></script>
+</body>
+</html>
